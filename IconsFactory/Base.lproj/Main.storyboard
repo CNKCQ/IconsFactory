@@ -232,7 +232,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XKc-JT-UAC">
-                                        <rect key="frame" x="135" y="107" width="229" height="22"/>
+                                        <rect key="frame" x="135" y="79" width="229" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Z5n-XW-s3W">
                                             <font key="font" metaFont="system"/>
@@ -241,7 +241,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gWF-gh-AEV">
-                                        <rect key="frame" x="135" y="75" width="229" height="22"/>
+                                        <rect key="frame" x="135" y="105" width="229" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="SoB-Qh-POQ">
                                             <font key="font" metaFont="system"/>
@@ -249,15 +249,15 @@
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PhE-xk-uDK">
-                                        <rect key="frame" x="393" y="68" width="58" height="32"/>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fdz-Cy-ikf">
+                                        <rect key="frame" x="383" y="72" width="58" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="push" title="..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vRc-9P-WOf">
+                                        <buttonCell key="cell" type="push" title="..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Cz0-XF-Nga">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
                                         <connections>
-                                            <action selector="jsonClick:" target="XfG-lQ-9wD" id="wjr-D5-sc1"/>
+                                            <action selector="saveClick:" target="XfG-lQ-9wD" id="pfv-c6-0tu"/>
                                         </connections>
                                     </button>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Frk-9I-cXr">
@@ -295,15 +295,15 @@
                                             </button>
                                         </subviews>
                                     </customView>
-                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fdz-Cy-ikf">
-                                        <rect key="frame" x="393" y="101" width="58" height="32"/>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PhE-xk-uDK">
+                                        <rect key="frame" x="383" y="98" width="58" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="push" title="..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Cz0-XF-Nga">
+                                        <buttonCell key="cell" type="push" title="..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vRc-9P-WOf">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
                                         <connections>
-                                            <action selector="saveClick:" target="XfG-lQ-9wD" id="pfv-c6-0tu"/>
+                                            <action selector="jsonClick:" target="XfG-lQ-9wD" id="wjr-D5-sc1"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -318,7 +318,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="807.5"/>
+            <point key="canvasLocation" x="129" y="501"/>
         </scene>
     </scenes>
     <resources>

@@ -19,17 +19,18 @@ extension ViewController {
     func generateWith(originalImage: NSImage?) {
         let path = Bundle.main.bundleURL
         var jsonPath = getIconJSONPath(iconFolderPath: path)
-        if let json = URL(string: UserDefaults.standard.object(forKey: "json") as? String ?? "") {
+        if let json = URL(string: UserDefaults.standard.object(forKey: "json") as! String) {
             jsonPath = json
         }
         var savePath = URL(string: "/Users/KingCQ/Desktop/Icons/")
-        if let saveDir = URL(string: UserDefaults.standard.object(forKey: "savePath") as? String ?? "") {
+        if let saveDir = URL(string: UserDefaults.standard.object(forKey: "savePath") as! String) {
             savePath = saveDir
         }
-        
-        
+        print(savePath, "savepath")
+        print(jsonPath, "jsonpath")
         do {
             let jsonDict = try? getJSONDict(jsonDictPath: jsonPath)
+            print(jsonDict, "jsonDict")
             guard let sizesArray = jsonDict?["images"] as? NSArray else {
                 fatalError("error")
             }
@@ -58,6 +59,7 @@ extension ViewController {
     }
     
     func getJSONDict(jsonDictPath: URL) throws -> NSDictionary {
+        print(jsonDictPath)
         guard let data = NSData(contentsOf: jsonDictPath) else {
             throw IMError.stringError("Loading icon JSON failed")
         }

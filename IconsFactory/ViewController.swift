@@ -17,6 +17,8 @@ class ViewController: NSViewController, NSOpenSavePanelDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        jsonField.stringValue = UserDefaults.standard.object(forKey: "json") as? String ?? ""
+        saveField.stringValue = UserDefaults.standard.object(forKey: "savePath") as? String ?? ""
         dragView.delegate = self
     }
     
