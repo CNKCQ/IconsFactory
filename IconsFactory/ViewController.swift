@@ -18,7 +18,6 @@ class ViewController: NSViewController, NSOpenSavePanelDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         dragView.delegate = self
-        
     }
     
     @IBAction func setting(_ sender: NSButtonCell) {
@@ -73,17 +72,16 @@ class ViewController: NSViewController, NSOpenSavePanelDelegate {
         let window = NSApplication.shared().windows.first!
         let frame = window.frame
         let height = window.frame.height
-        var t = height
+        var tempHeight = height
         if open {
-            t = 400
+            tempHeight = 400
         } else {
-            t = 320
+            tempHeight = 320
         }
-        let newFrame = CGRect.init(x: frame.origin.x, y: frame.origin.y + (height - t), width: frame.size.width, height: t)
+        let newFrame = CGRect.init(x: frame.origin.x, y: frame.origin.y + (height - tempHeight), width: frame.size.width, height: tempHeight)
         window.setFrame(newFrame, display: true, animate: animated)
     }
 
-    
 }
 
 extension ViewController: DragViewDelegate {
