@@ -81,7 +81,6 @@ class ViewController: NSViewController, NSOpenSavePanelDelegate {
         let newFrame = CGRect.init(x: frame.origin.x, y: frame.origin.y + (height - tempHeight), width: frame.size.width, height: tempHeight)
         window.setFrame(newFrame, display: true, animate: animated)
     }
-
 }
 
 extension ViewController: DragViewDelegate {
